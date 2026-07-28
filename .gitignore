@@ -19,3 +19,8 @@ Thumbs.db
 .idea/
 .vscode/
 *.swp
+
+# Node/TypeScript port
+node/node_modules/
+node/dist/
+node/.test-dist/

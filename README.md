@@ -49,6 +49,25 @@ Requires Go 1.26+.
 
 </details>
 
+<details>
+<summary>Node.js / TypeScript port (Chrome on Linux and macOS)</summary>
+
+The [`node/`](node/) directory contains a Node.js CLI with the same upload,
+`extract-token`, and `check-token` commands. It supports Google Chrome on Linux
+and macOS and requires Node.js 22.13 or newer.
+
+```bash
+cd node
+npm install
+npm run build
+npm link
+gh-image screenshot.png --repo owner/repo
+```
+
+See the [Node CLI README](node/README.md) for platform requirements.
+
+</details>
+
 ## Usage
 
 ```bash

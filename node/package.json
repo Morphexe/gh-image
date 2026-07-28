@@ -1,0 +1,31 @@
+{
+  "name": "@drogers0/gh-image",
+  "version": "0.1.0",
+  "description": "Chrome-only Node.js port of gh-image for Linux and macOS",
+  "type": "module",
+  "bin": {
+    "gh-image": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.test.json --noEmit",
+    "test": "tsc -p tsconfig.test.json && node --test .test-dist/test/*.test.js",
+    "check": "npm run typecheck && npm test && npm audit --audit-level=high"
+  },
+  "devDependencies": {
+    "@types/mime-types": "3.0.1",
+    "@types/node": "22.20.1",
+    "typescript": "7.0.2"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "mime-types": "3.0.2"
+  }
+}
